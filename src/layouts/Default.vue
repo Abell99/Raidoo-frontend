@@ -41,7 +41,7 @@
                 <g-link class="nav-link" to="/about">关于我们</g-link>
               </li>
               <li class="nav-item">
-                <g-link class="nav-link" to="/contact">联系我们</g-link>
+                <g-link class="nav-link" to="/contact"></g-link>
               </li>
               <li>
                 <form class="navbar-form navbar-left" role="search">
@@ -100,7 +100,9 @@
   </div>
 </template>
 
+
 <script>
+// import $ from 'jquery/dist/jquery.js'
 // import "https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
 export default {
   metaInfo: {

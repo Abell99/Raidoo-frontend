@@ -1,36 +1,14 @@
 <template>
   <Layout>
     <div style="width: 100%" class="lunbo">
-            <div id="demo" class="carousel slide" data-ride="carousel">
-        <!-- 指示符 -->
-        <ul class="carousel-indicators">
-          <li data-target="#demo" data-slide-to="0" class="active"></li>
-          <li data-target="#demo" data-slide-to="1"></li>
-          <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
-    
-        <!-- 轮播图片 -->
-        <div class="carousel-inner">
-          <g-link :to="'/post/' + index_lb[0].node.id" class="carousel-item active">
-            <img :src="GRIDSOME_API_URL + index_lb[0].node.cover.url">
+      <el-carousel :interval="4000" arrow="always" height="500px">
+        <el-carousel-item v-for="item in index_lb" :key="item" >
+          <g-link :to="'/post/' + item.node.id" class="carousel-item active">
+            <img :src="GRIDSOME_API_URL + item.node.cover.url" style="width: 100%; height: 100%">
           </g-link>
-          <g-link :to="'/post/' + index_lb[1].node.id" class="carousel-item">
-            <img :src="GRIDSOME_API_URL + index_lb[1].node.cover.url">
-          </g-link>
-          <g-link :to="'/post/' + index_lb[2].node.id" class="carousel-item">
-            <img :src="GRIDSOME_API_URL + index_lb[2].node.cover.url">
-          </g-link>
-        </div>
-      
-        <!-- 左右切换按钮 -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
-      
-      </div>
+          <!-- <h3 class="medium">{{ item }}</h3> -->
+        </el-carousel-item>
+      </el-carousel>
     </div>
 
     <div class="index-hotcity">
