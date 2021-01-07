@@ -1,0 +1,129 @@
+.index_img_text {
+    position: relative;
+    overflow: hidden;
+}
+.index_text {
+    position: absolute;
+    bottom: -100px;
+    transition: bottom 0.5s;
+    -webkit-transition: bottom 0.5s; /* Safari */
+}
+.index_img_text:hover .index_text {
+    bottom: 6px;
+    background-color: red;
+}
+
+.index-zhuanlan {
+    width: 100%;
+    height: 100%;
+}
+.boss {
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 100%;
+}
+
+.index-anli > ul {
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: space-around;
+    align-content: space-around;
+}
+
+.index-anli > ul > li{
+    list-style: none;
+}
+
+.index-anli > ul > li > div {
+    width: 350px;
+    height: 280px;
+    border: 1px solid;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.index-anli > ul > li > div > div {
+    width: 350px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    bottom: -100px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s; /* Safari */
+}
+.index-anli > ul > li > div > div > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 10px;
+}
+.index-anli > ul > li > div > div > p {
+    font-size: 16px;
+}
+.index-anli > ul > li > div:hover div {
+    bottom: 0px;
+    background-color: lawngreen;
+}
+
+.index-main {
+    margin: 0px auto;
+    width: 90%;
+    /* padding-top: 200px; */
+    /* background-image: url('../assets/img/index-start.png'); */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.index-ao {
+    padding-top: 60px;
+}
+.index_ao_hot {
+    margin-top: 30px;
+    width: 90%;
+    height: 400px;
+    /* min-height: 200px; */
+    background-color: lightblue;
+}
+
+.index-ao > ul {
+    padding: 0px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+.index-ao > ul > li {
+    list-style: none;
+    margin: 0px auto;
+    width: 360px;
+}
+.index-ao > ul > li > img {
+    margin: 0px auto;
+    width: 100%;
+    height: 160px;
+}
+.index-hz {
+    /* background-color: red; */
+}
+.index-hz > ul {
+    width: 90%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.index-hz > ul > li {
+    width: 360px;
+    height: 300px;
+}
+
+.index-hz > ul > li > div {
+    width: 100%;
+}
+p {
+    width: 100%;
+    /* word-break:break-all; */
+    word-wrap:break-word;
+}

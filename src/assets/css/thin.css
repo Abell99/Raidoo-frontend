@@ -1,0 +1,39 @@
+
+.lunbo {
+    /* position: relative; */
+    margin-top: 100px !important;
+}
+.masthead {
+    /* position: relative; */
+    margin-top: 100px !important;
+}
+.index-zhuanlan_anli {
+    width: 100% !important;
+    background-image: url('../img/index-start.png');
+    padding-top: 200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.index-anli {
+    background-image: url('../img/index-end.png');
+    background-repeat: no-repeat;
+    padding-bottom: 130px;
+    background-position: center bottom;
+    background-size: 100%;
+}
+
+.index-main {
+    width: 100%;
+}
+.index_ao_hot {
+    height: 200px !important;
+}
+.index-ao > ul {
+    width: 100% !important;
+}
+.index-ao > ul > li {
+    width: 100% !important;
+}
+.index-hz > ul {
+    width: 100% !important;
+}
