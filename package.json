@@ -11,13 +11,13 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/source-strapi": "^0.2.0",
     "@gridsome/transformer-remark": "^0.6.2",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "gridsome": "^0.7.0",
-    "markdown-it": "^11.0.0",
     "jquery": "^3.5.1",
-    "popper.js": "^1.16.1"
+    "markdown-it": "^11.0.0",
+    "popper.js": "^1.16.1",
+    "bootstrap": "^4.5.3"
   },
   "devDependencies": {
-    "bootstrap": "^4.5.3"
   }
 }
