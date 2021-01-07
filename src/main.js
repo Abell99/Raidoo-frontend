@@ -3,11 +3,12 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 // import 'bootstrap/dist/css/bootstrap.min.css'
-// import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
+
 // node_modules\popper.js\dist\popper.min.js
+import 'jquery/dist/jquery.min.js'
+import 'bootstrap/dist/js/bootstrap.js'
 import 'popper.js/dist/popper.min.js'
-import 'bootstrap/dist/js/bootstrap.min.js'
+
 // node_modules\jquery\dist\jquery.js
 // import $ from 'jquery'
 // import Vue from 'vue';

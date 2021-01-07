@@ -44,6 +44,7 @@
     </div>
   </Layout>
 </template>
+
 <page-query>
 query ($id: ID!) {
   tag: strapiTag (id: $id) {
@@ -56,6 +57,7 @@ query ($id: ID!) {
   }
 }
 </page-query>
+
 <script>
 export default {
   name: 'TagPage'
