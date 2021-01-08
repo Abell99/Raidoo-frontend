@@ -1,4 +1,15 @@
-
+.el-carousel el-carousel--horizontal {
+    height: 300px !important;
+}
+.el-carousel__container {
+    height: 300px !important;
+}
+.el-carousel__item {
+    height: 300px !important;
+}
+.el-carousel {
+    height: 300px !important;
+}
 .lunbo {
     /* position: relative; */
     margin-top: 100px !important;

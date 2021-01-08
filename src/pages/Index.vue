@@ -2,7 +2,7 @@
   <Layout>
     <div style="width: 100%" class="lunbo">
       <el-carousel :interval="4000" arrow="always" height="500px">
-        <el-carousel-item v-for="item in index_lb" :key="item" >
+        <el-carousel-item v-for="item in index_lb" :key="item.node.id" >
           <g-link :to="'/post/' + item.node.id" class="carousel-item active">
             <img :src="GRIDSOME_API_URL + item.node.cover.url" style="width: 100%; height: 100%">
           </g-link>
@@ -15,70 +15,76 @@
       <div><h2 style="font-size: 1em"><span style="font-size: 1.2em" class="iconfont icon-tuijian"></span>  热门国家<span style="font-size: 0.6em">/ HOT PROJECTS</span></h2></div>
       <ul>
         <li>澳洲</li>
-        <li>澳洲</li>
-        <li>澳洲</li>
-        <li>澳洲</li>
-        <li>澳洲</li>
+        <li>魁北克</li>
+        <li>加拿大</li>
       </ul>
     </div>
     <div class="index-zhuanlan_anli">
-        <div class="index-zhuanlan" style="margin-bottom: 100px">
-          <div><h2 style="font-size: 1em;text-align:center"><span style="font-size: 1.2em" class="iconfont icon-huiyuan"></span>  创始人专栏</h2></div>
-          <div class="index_img_text boss">
-            <div class="index_img boos"></div>
-            <span class="index_text">这是创始人</span>
+        <div class="index-zhuanlan" style="margin-bottom: 100px;" >
+          <div>
+            <h2 style="font-size: 2em;text-align:center; padding-bottom: 20px"><span style="font-size: 1.2em" class="iconfont icon-huiyuan"></span>  创始人专栏</h2>
           </div>
-        </div>
+          <el-card shadow="always" style=" width: 100%;height: 100%;" class="index_img_text boss">
+            <g-link class="index_img boos" :to="'/post/' + index_csr[0].node.id" style="width: 100%; height: 100%">
+              <img :src="GRIDSOME_API_URL + index_csr[0].node.cover.url" style="width: 100%; height: 100%">
+              <span class="index_text" style="width: 100%">这是创始人</span>
+            </g-link>
+          </el-card>
+         </div>
         <div class="index-anli">
-          <div><h2 style="font-size: 1em;text-align:center"><span style="font-size: 1.2em" class="iconfont icon-bangdan"></span>  睿渡经典案例</h2></div>
+          <div><h2 style="font-size: 2em;text-align:center; padding-bottom: 20px"><span style="font-size: 1.2em" class="iconfont icon-bangdan"></span>  睿渡移民热点</h2></div>
           <ul>
             <li>
-              <div>
-                1
-                <div>
+              <el-card shadow="hover" style="border: 0px"
+              :style="{
+                backgroundImage: `url(${ GRIDSOME_API_URL + index_rd[0].node.cover.url})`
+              }">
+                <div class="ymrd">
                   <div>
-                    <H3>三级标题</H3>
-                    <button>查看详情</button>
+                    <g-link :to="'/post/' + index_rd[0].node.id"><H4>{{index_rd[0].node.title}}</H4></g-link>
                   </div>
-                  <p>摘要mmmmmmmmmmmmmmmmmmm</p>
+                  <p>{{index_rd[0].node.synopsis}}</p>
                 </div>
-              </div>
+              </el-card>
             </li>
             <li>
-              <div>
-                2
-                <div>
+              <el-card shadow="hover" style="border: 0px"
+              :style="{
+                backgroundImage: `url(${ GRIDSOME_API_URL + index_rd[1].node.cover.url})`
+              }">
+                <div class="ymrd">
                   <div>
-                    <H3>三级标题</H3>
-                    <button>查看详情</button>
+                    <g-link :to="'/post/' + index_rd[1].node.id"><H4>{{index_rd[1].node.title}}</H4></g-link>
                   </div>
-                  <p>摘要mmmmmmmmmmmmmmmmmmm</p>
+                  <p>{{index_rd[1].node.synopsis}}</p>
                 </div>
-              </div>
+              </el-card>
             </li>
             <li>
-              <div>
-                3
-                <div>
+              <el-card shadow="hover" style="border: 0px"
+              :style="{
+                backgroundImage: `url(${ GRIDSOME_API_URL + index_rd[2].node.cover.url})`
+              }">
+                <div class="ymrd">
                   <div>
-                    <H3>三级标题</H3>
-                    <button>查看详情</button>
+                    <g-link :to="'/post/' + index_rd[2].node.id"><H4>{{index_rd[2].node.title}}</H4></g-link>
                   </div>
-                  <p>摘要mmmmmmmmmmmmmmmmmmm</p>
+                  <p>{{index_rd[2].node.synopsis}}</p>
                 </div>
-              </div>
+              </el-card>
             </li>
             <li>
-              <div>
-                4
-                <div>
+              <el-card shadow="hover" style="border: 0px"
+              :style="{
+                backgroundImage: `url(${ GRIDSOME_API_URL + index_rd[3].node.cover.url})`
+              }">
+                <div class="ymrd">
                   <div>
-                    <H3>三级标题</H3>
-                    <button>查看详情</button>
+                    <g-link :to="'/post/' + index_rd[3].node.id"><H4>{{index_rd[3].node.title}}</H4></g-link>
                   </div>
-                  <p>摘要mmmmmmmmmmmmmmmmmmm</p>
+                  <p>{{index_rd[3].node.synopsis}}</p>
                 </div>
-              </div>
+              </el-card>
             </li>
           </ul>
         </div>
@@ -188,25 +194,6 @@
         </li>
       </ul>
     </div>
-          <div class="post-preview" v-for="edge in $page.posts.edges" :key="edge.node.id">
-            <g-link :to="'/post/' + edge.node.id">
-              <h2 class="post-title">{{ edge.node.title }}</h2>
-            </g-link>
-            <p class="post-meta">
-              Posted by
-              <g-link
-                href="#"
-              >{{ edge.node.created_by.firstname + edge.node.created_by.lastname }}</g-link>
-              on {{ edge.node.created_at }}
-            </p> 
-            <p>
-              <span v-for="tag in edge.node.tags" :key="tag.id">
-                <g-link :to="'/tag/' + tag.id">{{ tag.title }}</g-link>
-                &nbsp;&nbsp;
-              </span>
-            </p>
-            <hr />
-          </div>
   </Layout>
 </template>
 
@@ -247,7 +234,9 @@ import '../assets/css/index_01.css'
 export default {
   data() {
     return {
-      index_lb: []
+      index_lb: [],
+      index_csr: [],
+      index_rd: []
     }
   },
   metaInfo: {
@@ -264,16 +253,19 @@ export default {
   },
   created() {
     this.index_lb = this.getpost('主页轮播')
+    this.index_csr = this.getpost('创始人')
+    this.index_rd = this.getpost('移民热点')
   },
   methods: {
     getpost (e) {
       let edges = this.$page.posts.edges
       let arr = []
       for (let key in edges) {
-        let tage = edges[key].node.tags[0].title
-        console.log(edges[key].node.tags[0].title)
-        if(tage == e) {
-          arr.push(edges[key])
+        let tags = edges[key].node.tags
+        for (let item in tags) {
+          if (tags[item].title == e) {
+            arr.push(edges[key])
+          }
         }
       }
       return arr
@@ -299,7 +291,7 @@ export default {
 }
 .lunbo {
   /* position: relative; */
-  margin-top: 170px;
+  margin-top: 176px;
 }
 /* .lunbo > .carousel-inner {
   position: absolute;
@@ -343,6 +335,26 @@ export default {
   /* height: 600px; */
   /* background-color: rgb(107, 0, 128); */
 }
-
-
+.el-card__body {
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+body {
+  background: url('../assets/img/background.jpg');
+}
+.ymrd {
+  height: 160px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column
+}
+.ymrd > div {
+  background-color: rgba(75, 42, 42, 0);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
 </style>
