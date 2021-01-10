@@ -16,7 +16,7 @@
       <ul>
         <li>澳洲</li>
         <li>魁北克</li>
-        <li>加拿大</li>
+        <li>新西兰</li>
       </ul>
     </div>
     <div class="index-zhuanlan_anli">
@@ -353,7 +353,7 @@ body {
 .ymrd > div {
   background-color: rgba(75, 42, 42, 0);
   width: 100%;
-  height: 50px;
+  height: 50px; 
   display: flex;
   justify-content: space-between;
 }
