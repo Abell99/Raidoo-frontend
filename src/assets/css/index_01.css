@@ -171,7 +171,8 @@ p {
     padding: 10px;
     padding-top: 20px;
     position:absolute;
-    bottom: 0px;
+    bottom: -10px;
+    font-size: 10px;
     /* left: 20px; */
 }
 .index_al > .el-card > .el-card__body > a > p > a {
