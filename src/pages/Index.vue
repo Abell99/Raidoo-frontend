@@ -105,7 +105,7 @@
             <el-image lazy :src="GRIDSOME_API_URL + item.node.cover.url" style="width: 100%; height: 70%"></el-image>
             <h4 style="font-size: 20px;font-weight: 800;padding:10px;margin:0px">{{item.node.title}}</h4>
             <p>
-                <g-link v-for="i in item.node.tags" :key="i.id">{{ i.title }}&nbsp&nbsp&nbsp&nbsp</g-link>
+                <g-link v-show="i.title != '移民案例'" v-for="i in item.node.tags" :key="i.id">{{ i.title }}&nbsp&nbsp&nbsp&nbsp</g-link>
             </p>
           </g-link>
         </el-card>i
