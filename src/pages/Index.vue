@@ -11,7 +11,7 @@
       </el-carousel>
     </div>
 
-    <div class="index-hotcity">
+    <div class="index-hotcity" style="margin-bottom: 100px;" >
       <div><h2 style="font-size: 1em"><span style="font-size: 1.2em" class="iconfont icon-tuijian"></span>  热门国家     <span style="font-size: 0.6em">/ HOT PROJECTS</span></h2></div>
       <ul>
         <li>澳洲</li>
