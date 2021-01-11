@@ -15,7 +15,7 @@
               <span class="meta">
                                                  by
                 <a href="#">{{ $page.post.created_by.firstname + $page.post.created_by.lastname }}</a>
-                <!-- {{ $page.post.created_at }} -->
+                {{ $page.post.created_at.split("T")[0] }}
               </span>
             </div>
           </div>
