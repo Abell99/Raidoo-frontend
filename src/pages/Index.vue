@@ -12,7 +12,7 @@
     </div>
 
     <div class="index-hotcity">
-      <div><h2 style="font-size: 1em"><span style="font-size: 1.2em" class="iconfont icon-tuijian"></span>  热门国家<span style="font-size: 0.6em">/ HOT PROJECTS</span></h2></div>
+      <div><h2 style="font-size: 1em"><span style="font-size: 1.2em" class="iconfont icon-tuijian"></span>  热门国家     <span style="font-size: 0.6em">/ HOT PROJECTS</span></h2></div>
       <ul>
         <li>澳洲</li>
         <li>魁北克</li>
@@ -32,7 +32,7 @@
           </el-card>
          </div>
         <div class="index-anli">
-          <div><h2 style="font-size: 2em;text-align:center; padding-bottom: 20px"><span style="font-size: 1.2em" class="iconfont icon-bangdan"></span>  睿渡移民热点</h2></div>
+          <div><h2 style="font-size: 2em;text-align:center; padding-bottom: 20px"><span style="font-size: 1.2em" class="iconfont icon-bangdan"></span>  睿渡移民热点     </h2></div>
           <ul>
             <li>
               <el-card shadow="hover" style="border: 0px"
@@ -41,7 +41,7 @@
               }">
                 <div class="ymrd">
                   <div>
-                    <g-link :to="'/post/' + index_rd[0].node.id"><H4>{{index_rd[0].node.title}}</H4></g-link>
+                    <g-link :to="'/post/' + index_rd[0].node.id"><H5>{{index_rd[0].node.title}}</H5></g-link>
                   </div>
                   <p>{{index_rd[0].node.synopsis}}</p>
                 </div>
@@ -54,7 +54,7 @@
               }">
                 <div class="ymrd">
                   <div>
-                    <g-link :to="'/post/' + index_rd[1].node.id"><H4>{{index_rd[1].node.title}}</H4></g-link>
+                    <g-link :to="'/post/' + index_rd[1].node.id"><H5>{{index_rd[1].node.title}}</H5></g-link>
                   </div>
                   <p>{{index_rd[1].node.synopsis}}</p>
                 </div>
@@ -67,7 +67,7 @@
               }">
                 <div class="ymrd">
                   <div>
-                    <g-link :to="'/post/' + index_rd[2].node.id"><H4>{{index_rd[2].node.title}}</H4></g-link>
+                    <g-link :to="'/post/' + index_rd[2].node.id"><H5>{{index_rd[2].node.title}}</H5></g-link>
                   </div>
                   <p>{{index_rd[2].node.synopsis}}</p>
                 </div>
@@ -80,7 +80,7 @@
               }">
                 <div class="ymrd">
                   <div>
-                    <g-link :to="'/post/' + index_rd[3].node.id"><H4>{{index_rd[3].node.title}}</H4></g-link>
+                    <g-link :to="'/post/' + index_rd[3].node.id"><H5>{{index_rd[3].node.title}}</H5></g-link>
                   </div>
                   <p>{{index_rd[3].node.synopsis}}</p>
                 </div>
@@ -91,108 +91,25 @@
         <!-- <el-button>默认按钮</el-button> -->
     </div>
     <div class="index-ao index-main">
-      <div><h2 style="font-size: 1em"><span style="font-size: 1.2em" class="iconfont icon-tuijian"></span>  移民澳洲 只找睿渡</h2></div>
-      <div class="index_ao_hot"></div>
-      <ul>
-        <li>
-          <img src="" alt="">
-          <div>
-            <h3>对奥移民案例</h3>
-            <p>案例简介1234567890</p>
-          </div>
-        </li>
-        <li>
-          <img src="" alt="">
-          <div>
-            <h3>对奥移民案例</h3>
-            <p>案例简介1234567890</p>
-          </div>
-        </li>
-        <li>
-          <img src="" alt="">
-          <div>
-            <h3>对奥移民案例</h3>
-            <p>案例简介1234567890</p>
-          </div>
-        </li>
-        <li>
-          <img src="" alt="">
-          <div>
-            <h3>对奥移民案例</h3>
-            <p>案例简介1234567890</p>
-          </div>
-        </li>
-        <li>
-          <img src="" alt="">
-          <div>
-            <h3>对奥移民案例</h3>
-            <p>案例简介1234567890</p>
-          </div>
-        </li>
-        <li>
-          <img src="" alt="">
-          <div>
-            <h3>对奥移民案例</h3>
-            <p>案例简介1234567890</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="index-hz index-main">
-      <div><h2 style="font-size: 1em"><span style="font-size: 1.2em" class="iconfont icon-ka"></span>  全球绿卡 护照专家</h2></div>
-      <ul>
-        <li>
-          <div><h3>国家</h3></div>
-          <div>
-            <h3>标题</h3>
-            <p>摘要。。。。。。。。。。。。。。。。。。。。</p>
-            <button>查看详情</button>
-          </div>
-        </li>
-        <li>
-          <div><h3>国家</h3></div>
-          <div>
-            <h3>标题</h3>
+      <div><h2 style="font-size: 2em;text-align:center; padding-bottom: 20px"><span style="font-size: 1.2em" class="iconfont icon-shengyin
+"></span>  移民澳洲  只找睿渡     </h2></div>
+      <el-card class="index_ao_hot block" style="margin-bottom: 30px" shadow="always">
+          <!-- <span class="demonstration">默认</span> -->
+          <g-link  style="padding: 14px;width: 100%;height: 100%;padding:0px">
+            <el-image :src="GRIDSOME_API_URL + index_rd[3].node.cover.url" style="width: 100%; height: 100%"></el-image>
+          </g-link>
+      </el-card>
+      <el-row class="index_al">
+        <el-card v-for="o in 100" :key="o" shadow="hover">
+          <g-link style="padding: 14px;width: 100%;height: 100%;padding:0px">
+            <el-image lazy :src="GRIDSOME_API_URL + index_rd[3].node.cover.url" style="width: 100%; height: 80%"></el-image>
+            <h4 style="padding:0px;margin:0px">《好吃的汉堡》</h4>
             <p>
-              af df asd fsad f asd f asdf asd f asd f
-              摘要上帝发誓
+                <g-link v-for="i in 5" :key="i">{{ i }}  </g-link>
             </p>
-            <button>查看详情</button>
-          </div>
-        </li>
-        <li>
-          <div><h3>国家</h3></div>
-          <div>
-            <h3>标题</h3>
-            <p>摘要。。。。。。。。。。。。。。。。。。。。</p>
-            <button>查看详情</button>
-          </div>
-        </li>
-        <li>
-          <div><h3>国家</h3></div>
-          <div>
-            <h3>标题</h3>
-            <p>摘要。。。。。。。。。。。。。。。。。。。。</p>
-            <button>查看详情</button>
-          </div>
-        </li>
-        <li>
-          <div><h3>国家</h3></div>
-          <div>
-            <h3>标题</h3>
-            <p>摘要。。。。。。。。。。。。。。。。。。。。</p>
-            <button>查看详情</button>
-          </div>
-        </li>
-        <li>
-          <div><h3>国家</h3></div>
-          <div>
-            <h3>标题</h3>
-            <p>摘要。。。。。。。。。。。。。。。。。。。。</p>
-            <button>查看详情</button>
-          </div>
-        </li>
-      </ul>
+          </g-link>
+        </el-card>i
+      </el-row>
     </div>
   </Layout>
 </template>
@@ -236,7 +153,8 @@ export default {
     return {
       index_lb: [],
       index_csr: [],
-      index_rd: []
+      index_rd: [],
+      index_al: []
     }
   },
   metaInfo: {
@@ -255,6 +173,8 @@ export default {
     this.index_lb = this.getpost('主页轮播')
     this.index_csr = this.getpost('创始人')
     this.index_rd = this.getpost('移民热点')
+    this.index_js = this.getpost('移民介绍')
+    this.index_al = this.getpost('移民案例')
   },
   methods: {
     getpost (e) {
