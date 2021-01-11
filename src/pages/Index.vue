@@ -11,7 +11,7 @@
       </el-carousel>
     </div>
 
-    <div class="index-hotcity" style="margin-bottom: 100px;" >
+    <div class="index-hotcity">
       <div><h2 style="font-size: 1em"><span style="font-size: 1.2em" class="iconfont icon-tuijian"></span>  热门国家     <span style="font-size: 0.6em">/ HOT PROJECTS</span></h2></div>
       <ul>
         <li>澳洲</li>
@@ -108,7 +108,7 @@
                 <g-link v-show="i.title != '移民案例'" v-for="i in item.node.tags" :key="i.id">{{ i.title }}&nbsp&nbsp&nbsp&nbsp</g-link>
             </p>
           </g-link>
-        </el-card>i
+        </el-card>
       </el-row>
     </div>
   </Layout>
