@@ -157,7 +157,7 @@ p {
     margin-right: 50px;
     /* background-color: yellow; */
     width: 300px;
-    height: 400px;
+    height: 450px;
     align-self: flex-start;
 }
 
@@ -166,10 +166,17 @@ p {
     position: relative;
 }
 .index_al > .el-card > .el-card__body > a > p {
-    margin: 0px;
-    padding: 0px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    padding-top: 20px;
     position:absolute;
-    color: rebeccapurple;
-    bottom: 20px;
-    left: 20px;
+    bottom: 0px;
+    /* left: 20px; */
+}
+.index_al > .el-card > .el-card__body > a > p > a {
+    color: rgb(99, 96, 102);
+}
+.index_al > .el-card > .el-card__body > a > p > a:hover {
+    color: rgba(13, 120, 153, 0.719);
 }

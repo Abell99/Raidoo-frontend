@@ -95,17 +95,17 @@
 "></span>  移民澳洲  只找睿渡     </h2></div>
       <el-card class="index_ao_hot block" style="margin-bottom: 30px" shadow="always">
           <!-- <span class="demonstration">默认</span> -->
-          <g-link  style="padding: 14px;width: 100%;height: 100%;padding:0px">
-            <el-image :src="GRIDSOME_API_URL + index_rd[3].node.cover.url" style="width: 100%; height: 100%"></el-image>
+          <g-link :to="'/post/' + index_js[0].node.id"  style="padding: 14px;width: 100%;height: 100%;padding:0px">
+            <el-image :src="GRIDSOME_API_URL + index_js[0].node.cover.url" style="width: 100%; height: 100%"></el-image>
           </g-link>
       </el-card>
       <el-row class="index_al">
-        <el-card v-for="o in 100" :key="o" shadow="hover">
-          <g-link style="padding: 14px;width: 100%;height: 100%;padding:0px">
-            <el-image lazy :src="GRIDSOME_API_URL + index_rd[3].node.cover.url" style="width: 100%; height: 80%"></el-image>
-            <h4 style="padding:0px;margin:0px">《好吃的汉堡》</h4>
+        <el-card v-for="item in index_al" :key="item.node.id" shadow="hover">
+          <g-link :to="'/post/' + item.node.id" style="padding: 14px;width: 100%;height: 100%;padding:0px">
+            <el-image lazy :src="GRIDSOME_API_URL + item.node.cover.url" style="width: 100%; height: 70%"></el-image>
+            <h4 style="font-size: 20px;font-weight: 800;padding:10px;margin:0px">{{item.node.title}}</h4>
             <p>
-                <g-link v-for="i in 5" :key="i">{{ i }}  </g-link>
+                <g-link v-for="i in item.node.tags" :key="i.id">{{ i.title }}&nbsp&nbsp&nbsp&nbsp</g-link>
             </p>
           </g-link>
         </el-card>i
