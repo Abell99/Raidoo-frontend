@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('/img/home-bg.jpg')">
+    <header class="masthead" style="background-image: url('/img/home-bg.jpg'); margin-top: 180px">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
