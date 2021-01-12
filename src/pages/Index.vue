@@ -102,7 +102,7 @@
       <el-row class="index_al">
         <el-card v-for="item in index_al" :key="item.node.id" shadow="hover">
           <g-link :to="'/post/' + item.node.id" style="padding: 14px;width: 100%;height: 100%;padding:0px">
-            <el-image lazy :src="GRIDSOME_API_URL + item.node.cover.url" style="width: 100%; height: 70%"></el-image>
+            <el-image :src="GRIDSOME_API_URL + item.node.cover.url" style="width: 100%; height: 70%"></el-image>
             <h4 style="font-size: 20px;font-weight: 800;padding:10px;margin:0px">{{item.node.title}}</h4>
             <p>
                 <g-link v-show="i.title != '移民案例'" v-for="i in item.node.tags" :key="i.id">#{{ i.title }}&nbsp&nbsp&nbsp&nbsp</g-link>
