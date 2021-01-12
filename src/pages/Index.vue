@@ -4,7 +4,7 @@
       <el-carousel :interval="4000" arrow="always" height="500px">
         <el-carousel-item v-for="item in index_lb" :key="item.node.id" >
           <g-link :to="'/post/' + item.node.id" class="carousel-item active">
-            <img :src="GRIDSOME_API_URL + item.node.cover.url" style="width: 100%; height: 100%">
+            <img :src="GRIDSOME_API_URL + item.node.cover.url" style="width: 100%; height: 500px">
           </g-link>
           <!-- <h3 class="medium">{{ item }}</h3> -->
         </el-carousel-item>

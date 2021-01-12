@@ -18,23 +18,29 @@
     /* position: relative; */
     margin-top: 100px !important;
 }
-.index-zhuanlan_anli {
+/* .index-zhuanlan_anli {
     width: 100% !important;
     background-image: url('../img/index-start.png');
     padding-top: 200px;
     background-repeat: no-repeat;
     background-size: 100%;
-}
-.index-anli {
+} */
+/* .index-anli {
     background-image: url('../img/index-end.png');
     background-repeat: no-repeat;
     padding-bottom: 130px;
     background-position: center bottom;
     background-size: 100%;
-}
+} */
 
 .index-main {
-    width: 100%;
+    width: 100% !important;
+    margin: auto 0px !important;
+}
+.index_al > .el-card {
+    width: 100% !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
 .index_ao_hot {
     height: 200px !important;
