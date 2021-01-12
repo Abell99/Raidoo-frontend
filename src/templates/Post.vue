@@ -17,6 +17,10 @@
                 <a href="#">{{ $page.post.created_by.firstname + $page.post.created_by.lastname }}</a>
                 on  {{ $page.post.created_at.split("T")[0] }}
               </span>
+              <br>
+              <p>
+                  <g-link style="color: gainsboro; text-decoration:none;" :to="'/tag/' + i.id" v-show="i.title != '移民案例' &&  i.title != '主页轮播' &&  i.title != '创始人' &&  i.title != '移民热点' &&  i.title != '移民介绍'" v-for="i in $page.post.tags" :key="i.id">#{{ i.title }}&nbsp&nbsp&nbsp&nbsp</g-link>
+              </p>
             </div>
           </div>
         </div>
@@ -74,6 +78,6 @@ export default {
 <style>
 .masthead {
   /* position: relative; */
-  margin-top: 170px;
+  margin-top: 180px;
 }
 </style>
