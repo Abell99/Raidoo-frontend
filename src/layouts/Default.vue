@@ -24,7 +24,7 @@
                 <g-link class="nav-link" to="/"><h4>首页</h4></g-link>
               </li>
               <li class="nav-item">
-                <g-link class="nav-link" to="/"><h4>移民热门</h4></g-link>
+                <g-link style="color: #0F0E0D" class="nav-link" to="/hot"><h4>移民热门</h4></g-link>
               </li>
               <li class="nav-item">
                 <g-link class="nav-link" to="/"><h4>睿渡动态</h4></g-link>

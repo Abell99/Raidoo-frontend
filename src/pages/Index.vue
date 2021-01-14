@@ -14,9 +14,45 @@
     <div class="index-hotcity">
       <div><h2 style="font-size: 1em"><span style="font-size: 1.2em" class="iconfont icon-tuijian"></span>  热门国家     <span style="font-size: 0.6em">/ HOT PROJECTS</span></h2></div>
       <ul>
-        <li>澳洲</li>
-        <li>魁北克</li>
-        <li>新西兰</li>
+        <li style="list-style: none">
+          <el-dropdown>
+            <span class="el-dropdown-link" style="color: white">
+              澳大利亚<i class="el-icon-arrow-down el-icon--right"></i>
+            </span>
+            <el-dropdown-menu slot="dropdown"  divided="true">
+              <el-dropdown-item><g-link :to="'/tag/'+ '7'">澳洲 188A</g-link></el-dropdown-item>
+              <el-dropdown-item><g-link :to="'/tag/'+ '8'">澳洲 188B</g-link></el-dropdown-item>
+              <el-dropdown-item><g-link :to="'/tag/'+ '9'">澳洲 188C</g-link></el-dropdown-item>
+              <el-dropdown-item><g-link style="color: darkgray" :to="'/tag/'+ '澳洲 188D'">澳洲 132</g-link></el-dropdown-item>
+            </el-dropdown-menu>
+          </el-dropdown>
+        </li>
+        <li style="list-style: none">
+          <el-dropdown>
+            <span class="el-dropdown-link" style="color: white">
+              魁北克<i class="el-icon-arrow-down el-icon--right"></i>
+            </span>
+            <!-- <el-dropdown-menu slot="dropdown"  divided="true">
+              <el-dropdown-item><g-link :to="'/tag/'+ '7'">魁北克 188A</g-link></el-dropdown-item>
+              <el-dropdown-item><g-link :to="'/tag/'+ '8'">魁北克 188B</g-link></el-dropdown-item>
+              <el-dropdown-item><g-link :to="'/tag/'+ '9'">魁北克 188C</g-link></el-dropdown-item>
+              <el-dropdown-item><g-link style="color: darkgray" :to="'/tag/'+ '澳洲 188D'">澳洲 132</g-link></el-dropdown-item>
+            </el-dropdown-menu> -->
+          </el-dropdown>
+        </li>
+        <li style="list-style: none">
+          <el-dropdown>
+            <span class="el-dropdown-link" style="color: white">
+              新西兰<i class="el-icon-arrow-down el-icon--right"></i>
+            </span>
+            <!-- <el-dropdown-menu slot="dropdown"  divided="true">
+              <el-dropdown-item><g-link :to="'/tag/'+ '7'">新西兰 188A</g-link></el-dropdown-item>
+              <el-dropdown-item><g-link :to="'/tag/'+ '8'">新西兰 188B</g-link></el-dropdown-item>
+              <el-dropdown-item><g-link :to="'/tag/'+ '9'">新西兰 188C</g-link></el-dropdown-item>
+              <el-dropdown-item disabled><g-link style="color: darkgray" :to="'/tag/'+ '澳洲 188D'">新西兰 188D</g-link></el-dropdown-item>
+            </el-dropdown-menu> -->
+          </el-dropdown>
+        </li>
       </ul>
     </div>
     <div class="index-zhuanlan_anli">

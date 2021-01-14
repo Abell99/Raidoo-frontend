@@ -181,3 +181,11 @@ p {
 .index_al > .el-card > .el-card__body > a > p > a:hover {
     color: rgba(13, 120, 153, 0.719);
 }
+
+.index-hotcity {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
